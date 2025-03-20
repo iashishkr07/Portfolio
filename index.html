@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-2xl font-bold">My Portfolio</h1>
+        <nav class="space-x-6">
+            <a class="hover:text-gray-400" href="#home">Home</a>
+            <a class="hover:text-gray-400" href="#skill">Skills</a>
+            <a class="hover:text-gray-400" href="#project">Projects</a>
+            <a class="hover:text-gray-400" href="https://www.linkedin.com/in/ashishkr07/"><i class="fab fa-linkedin"></i></a>
+            <a class="hover:text-gray-400" href="https://github.com/iashishkr07"><i class="fab fa-github"></i></a>
+            <a class="hover:text-gray-400 " href="https://www.instagram.com/i.ashishkr07/"><i class="fab fa-instagram"></i></a>
+            <a class="border border-white  py-2 px-4 rounded hover:bg-white hover:text-black" href="#contact">Let's Connect</a>
+        </nav>
+    </header>
+    <section class="home" id="home"> 
+        <div class="box1">
+            <h2 class="w-60 border border-white py-2 px-4" >Welcome to my portfolio</h2>
+            <h3 class="text-6xl font-bold">Hello, I'm Ashish Frontend Developer!</h3>
+            <p>I'm a passionate frontend developer with a keen eye for detail and a strong dedication to creating meaningful and user-friendly experiences.</p>
+            <a class="btn border border-white  py-2 px-4 " href="#contact">Let's Connect</a>
+        </div>
+        <div class="box2">
+            <img src="./assets/bg.jpg">
+        </div>
+    </section>
+    <section class="skill" id="skill">
+        <h1 class="text-4xl font-bold mt-10">Skills</h1>
+        <p class="text-xl font-semibold px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate non aut fuga inventore doloremque quod eum vitae sint reprehenderit, asperiores ea, dignissimos error possimus obcaecati?</p>
+        <div class="box3 flex gap-4">
+            <div class="h-30 w-80 rounded border border-white py-2 px-4">
+                <img src="./assets/fr.jpg" alt="" >
+                Frontend Developer</div>
+            <div class="h-30 w-80 rounded border border-white py-2 px-4">
+                <img src="./assets/backend.jpg" alt="">
+                Backend Developer</div>
+            <div class="h-30 w-80 rounded border border-white py-2 px-4">
+                <img src="./assets/database.jpg" alt="">
+                Database Administrator
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <h1 class="text-4xl font-bold ">My Latest Works</h1>
+        <div class="container" id="conGg">
+            <div class="box" id="imageBox"></div>
+            <button class="arrow" id="rightArrow">
+                <img src="./assets/arrow-right.png" alt="">
+            </button>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="text-4xl font-bold ">Get In Touch </h1>
+        <div class="box4">
+            <form action="https://formspree.io/f/xdkeaqgy" method="POST">
+                <input type="text" placeholder="Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <textarea placeholder="Message" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+            <img src="./assets/contact-img.svg" alt="">
+        </div>
+    </section>
+    <footer>
+        <p class="text-2xl text-white">Copyright © 2021 All rights reserved | This template is made by <a href="https://www.linkedin.com/in/ashishkr07/">Ashish Singh</a></p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ashishkr07/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/iashishkr07"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/i.ashishkr07/"><i class="fab fa-instagram"></i></a>
+        </div>  
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
